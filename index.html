@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="header-nav">
+        <div class="logo">
+          <button class="menu-mob"><img src="img/menu-icon-mob.svg" alt="menu"></button>
+          <img src="img/logo.svg" class="logo-img" alt="logo">
+        </div>
+        <ul class="nav-list disabled">
+          <img src="img/close-icon.svg" alt="close" class="close-tag">
+          <li data-action>Заемщикам</li>
+          <ul class="sub-menu">
+            <li><a href="#">Взять кредит</a></li>
+            <li><a href="#">Типы кредитов</a></li>
+            <li><a href="#">Выгода без посредников</a></li>
+            <li><a href="#">Время получения кредита</a></li>
+          </ul>
+          <li data-action>Инвесторам</li>
+          <ul class="sub-menu">
+            <li><a href="#">Виды инвестиций</a></li>
+            <li><a href="#">Страховой фонд</a></li>
+            <li><a href="#">Безопасность инвестиций</a></li>
+            <li><a href="#">Рынок ссуд</a></li>
+            <li><a href="#">Топ доходность с Нами</a></li>
+          </ul>
+          <li data-action>Полезная информация</li>
+          <ul class="sub-menu">
+            <li><a href="#">Почему CASHYOU</a></li>
+            <li><a href="#">Благотворительность</a></li>
+            <li><a href="#">Досрочное погашение</a></li>
+            <li><a href="#">Наша статистика</a></li>
+            <li><a href="#">Кредиты без бюрократии</a></li>
+            <li><a href="#">Африка на карте Мира</a></li>
+          </ul>
+          <li data-action>О компании</li>
+          <ul class="sub-menu">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Мы в СМИ</a></li>
+            <li><a href="#">Лицензии и договора</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <li>Благотворительность</li>
+          <a href="#" class="sign-in-mob">Войти</a>
+        </ul>
+        <div class="nav-right-side">
+          <select name="language" id="lang">
+            <option value="eng">EN</option>
+            <option value="fr">FR</option>
+            <option value="ru" selected>RU</option>
+            <option value="de">DE</option>
+          </select>
+          <a href="#" class="sign-in"><img src="img/sign-in-icon.svg" alt="sign-in-icon"></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div class="container">
+        <div class="banner__options">
+          <h1>Кредит на карту<br> не выходя из дома</h1>
+          <p>
+            Лучшие условия для четырех стран мира.<br>
+            Мы превращаем ваши мечты в вашу реальность.
+          </p>
+          <div class="banner__buttons">
+            <a href="#" class="btn selected-btn">Получить кредит</a>
+            <a href="#" class="btn">Узнать подробности</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="abilities">
+      <div class="container">
+        <div class="abilities__contain">
+          <div class="images-block">
+            <img src="img/side-screenshot-min.png" class="side-img" alt="screenshot">
+            <img src="img/side-screenshot-mob.png" class="side-img-mob" alt="screenshot">
+          </div>
+          <div class="descript">
+            <h2>Используя наше приложение,<br> вы получите возможность:</h2>
+            <div class="descript__items">
+              <div class="descript__item">
+                <h4>Взять деньги</h4>
+                <p>Быстро и безопасно оформляйте<br> кредит с удобными для вас<br> условиями</p>
+                <img src="img/icon-business.svg" alt="descr_icon" class="descript__icon">
+              </div>
+              <div class="descript__item">
+                <h4>Заработать</h4>
+                <p>Влаживайте средства на выгодных<br> условиях и получайте<br> гарантированную прибыль</p>
+                <img src="img/icon-rice.svg" alt="descr_icon" class="descript__icon">
+              </div>
+            </div>
+            <div class="descript__refs">
+              <a href="#" class="app-store"><img src="img/app-store-icon.svg" alt="app-store"></a>
+              <a href="#" class="app-store"><img src="img/play-market-icon.svg" alt="play-market"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="conditions">
+      <h2 class="title">Высокая репутация и надежность<br> проверенная клиентами</h2>
+
+      <div class="terms-banner">
+        <div class="container">
+          <div class="our-terms-wrapper">
+            <div class="left-terms">
+              <img src="img/idea-icon.svg" alt="idea">
+              <div class="side-des">
+                <h4>Условия других МФО</h4>
+                <p>1%, 2% и даже 5% в день</p>
+              </div>
+            </div>
+            <div class="border"></div>
+
+            <div class="right-terms">
+              <div class="percent">
+                <h2>0,7<span>%</span></h2>
+                <p>минимальная ставка</p>
+              </div>
+              <div class="side-des">
+                <h4>Наши условия</h4>
+                <p>Среднестатистическая<br> ставка 0,9% в день</p>
+                <img src="img/arrow-icon-left.svg" class="arrow" alt="arrow">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="sub-counter">
+          <div class="sub-counter__item">
+            <h3>280 000</h3>
+            <h4>Активных заемщиков</h4>
+          </div>
+          <div class="sub-counter__item">
+            <h3>20 000</h3>
+            <h4>Активных инвесторов</h4>
+          </div>
+          <div class="sub-counter__item">
+            <h3>1 200 000 EUR</h3>
+            <h4>Финансовый оборот</h4>
+          </div>
+          <div class="sub-counter__item">
+            <h3>4 страны</h3>
+            <h4>Наша специализация</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="calculator">
+      <div class="container">
+        <div class="calculator__content">
+          <div class="descript">
+            <h2>Получите деньги не выходя из дома</h2>
+            <h4>Доставим деньги вам домой</h4>
+            <p>
+              Безопасность на первом месте — деньги будут на карте в<br>
+              течение времени оговоренном с менеджером
+            </p>
+            <h4>Удобное погашение онлайн</h4>
+            <p>
+              Вернуть займ вы можете также не выходя из дома при помощи<br>
+              онлайн-сервиса, или нашего приложения
+            </p>
+          </div>
+          <div class="calculator__calculator">
+            <div class="change__curr">
+              <div class="credit-total">
+                <p>Сумма кредита</p>
+                <p class="total">700 USD</p>
+              </div>
+              <select name="currency" id="curr">
+                <option value="usd" selected>USD</option>
+                <option value="uah">UAH</option>
+                <option value="rub">RUB</option>
+              </select>
+            </div>
+            <input id="dept-calc" list="dept-list" min="100" max="1500" type="range" value="800" />
+            <datalist for="dept-calc">
+              <option value="100" label="100$"></option>
+              <option value="500" label="500$"></option>
+              <option value="1000" label="1000$"></option>
+              <option value="1500" label="1500$"></option>
+            </datalist>
+            <div class="time-dept">
+              <p>Срок кредита</p>
+              <p class="total">4 мес.</p>
+            </div>
+            <input id="time-calc" list="time-list" min="1" max="18" type="range" value="5" />
+            <datalist for="time-calc">
+              <option value="1" label="1 мес."></option>
+              <option value="6" label="6 мес."></option>
+              <option value="12" label="12 мес."></option>
+              <option value="18" label="18 мес."></option>
+            </datalist>
+            <div class="calculator-cofirm">
+              <div class="payment-desc">
+                <p>Ежемесячный платеж</p>
+                <p class="total">147 USD</p>
+              </div>
+              <button class="calculator-submit">Заполнить заявку</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers">
+      <div class="container">
+        <div class="offers__contain">
+          <h2>Наши клиенты чаще всего берут средства для:</h2>
+
+          <div class="offers-items">
+            <div class="offers-items__item">
+              <div class="item-descript">
+                <h4>Медицинские услуги</h4>
+                <p>Этот вид кредитования покрывает практически все нужды при оказании медицинских услуг</p>
+                <a href="#">Подробнее</a>
+              </div>
+              <div class="item-img">
+                <img src="img/offers-icon1.svg" alt="offer-icon">
+              </div>
+            </div>
+
+            <div class="offers-items__item">
+              <div class="item-descript">
+                <h4>Личные нужды</h4>
+                <p>У любого человека есть множество потребностей, на которые не всегда хватает средств</p>
+                <a href="#">Подробнее</a>
+              </div>
+              <div class="item-img">
+                <img src="img/offers-icon2.svg" alt="offer-icon">
+              </div>
+            </div>
+
+            <div class="offers-items__item">
+              <div class="item-descript">
+                <h4>Ремонт жилья</h4>
+                <p>Дом или квартира – это личное пространство человека, которое всегда должно быть в полном порядке</p>
+                <a href="#">Подробнее</a>
+              </div>
+              <div class="item-img">
+                <img src="img/offers-icon3.svg" alt="offer-icon">
+              </div>
+            </div>
+
+            <div class="offers-items__item">
+              <div class="item-descript">
+                <h4>Образование</h4>
+                <p>Хорошая квалификация - это высокооплачиваемая работа в будущем</p>
+                <a href="#">Подробнее</a>
+              </div>
+              <div class="item-img">
+                <img src="img/offers-icon4.svg" alt="offer-icon">
+              </div>
+            </div>
+
+            <div class="offers-items__item">
+              <div class="item-descript">
+                <h4>Особенное торжество</h4>
+                <p>Всем хочется, чтобы этот день был незабываем и навсегда остался в памяти</p>
+                <a href="#">Подробнее</a>
+              </div>
+              <div class="item-img">
+                <img src="img/offers-icon5.svg" alt="offer-icon">
+              </div>
+            </div>
+
+            <div class="offers-items__item">
+              <div class="item-descript">
+                <h4>Развитие бизнеса</h4>
+                <p>Для начала собственного бизнеса нужны средства -
+                  мы с радостью поможем с этим</p>
+                <a href="#">Подробнее</a>
+              </div>
+              <div class="item-img">
+                <img src="img/offers-icon6.svg" alt="offer-icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instruction">
+      <div class="container">
+        <h2 class="title">Получите кредит в три шага</h2>
+        <ul class="tabs">
+          <li data-tab-target="#take" class="on tab">Как взять</li>
+          <li data-tab-target="#return" class="tab">Как вернуть</li>
+        </ul>
+      </div>
+      <div id="take" data-tab-content class="on">
+        <div class="content-banner">
+          <div class="content-banner-item">
+            <img src="img/num-icon-1.svg" alt="num-1">
+            <div class="content-descr">
+              <h3>Заполняйте зайвку</h3>
+              <p>Выбирайте цель кредита, сумму
+                и удобный срок кредитования</p>
+            </div>
+          </div>
+          <div class="content-banner-item">
+            <img src="img/num-icon-2.svg" alt="num-2">
+            <div class="content-descr">
+              <h3>Дождитесь решения</h3>
+              <p>В течении 10мин, наши специалисты помогут Вам</p>
+            </div>
+          </div>
+          <div class="content-banner-item">
+            <img src="img/num-icon-3.svg" alt="num-3">
+            <div class="content-descr">
+              <h3>Получите деньги</h3>
+              <p>Деньги поступят на Ваш счет
+                в течении 1 часа</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="return" data-tab-content></div>
+    </section>
+
+    <section class="calculator-deposit">
+      <div class="container">
+        <div class="calculator__content">
+          <div class="calculator-right-cont">
+            <img src="img/piggy-bank.svg" class="piggy" alt="piggy">
+            <div class="descript">
+              <h2>Инвестированно</h2>
+              <h3>1 286 520$</h3>
+              <p>Лучший инвестиционный сервис на рынке.</p>
+              <p>Мгновенный вывод средств на карту.</p>
+              <p>Комиссия только за сделки. Всё остальное — бесплатно.</p>
+            </div>
+          </div>
+          <div class="calculator__calculator">
+            <div class="change__curr">
+              <div class="credit-total">
+                <p>Калькулятор доходности</p>
+                <p class="total">6 мес.</p>
+              </div>
+              <select name="currency" id="curr">
+                <option value="usd" selected>USD</option>
+                <option value="uah">UAH</option>
+                <option value="rub">RUB</option>
+              </select>
+            </div>
+            <input id="time-calc-dep" list="time-list" min="1" max="18" type="range" value="5" />
+            <datalist for="time-calc">
+              <option value="1" label="1 мес."></option>
+              <option value="6" label="6 мес."></option>
+              <option value="12" label="12 мес."></option>
+              <option value="18" label="18 мес."></option>
+            </datalist>
+            <div class="time-dept">
+              <p>Сумма инвестиций</p>
+              <p class="total">12 000 USD</p>
+            </div>
+            <input id="dept-calc-dep" list="dept-list" min="100" max="1500" type="range" value="800" />
+            <datalist for="dept-calc">
+              <option value="100" label="100$"></option>
+              <option value="500" label="500$"></option>
+              <option value="1000" label="1000$"></option>
+              <option value="1500" label="1500$"></option>
+            </datalist>
+            <div class="calculator-cofirm">
+              <div class="payment-desc">
+                <p>Прибыль</p>
+                <p class="total">14 700 USD</p>
+              </div>
+              <div class="payment-desc">
+                <p>Дивиденды</p>
+                <p class="total blue">2 700 USD</p>
+              </div>
+            </div>
+            <button class="calculator-submit">Стать инвестором</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider-content">
+      <div class="container">
+        <h2 class="title">Отзывы наших клиентов</h2>
+        <div class="slider">
+
+          <div class="slide-review">
+            <h4>“Over 10 years of experience<br>
+              as a real estate agent”</h4>
+            <p class="slide-desc">
+              Amet libero morbi venenatis ut est. Iaculis leo ultricies nunc id ante adipiscing. Vel metus odio at
+              faucibus ac. Neque id placerat et id ut. Scelerisque eu mi ullamcorper sit urna. Est volutpat dignissim
+              elementum, nec.
+            </p>
+            <h5>Kristin Watson</h5>
+            <p>Imperial Property Group Agent</p>
+          </div>
+
+          <div class="slide-review">
+            <h4>“Over 10 years of experience<br>
+              as a real estate agent”</h4>
+            <p class="slide-desc">
+              Amet libero morbi venenatis ut est. Iaculis leo ultricies nunc id ante adipiscing. Vel metus odio at
+              faucibus ac. Neque id placerat et id ut. Scelerisque eu mi ullamcorper sit urna. Est volutpat dignissim
+              elementum, nec.
+            </p>
+            <h5>Kristin Watson</h5>
+            <p>Imperial Property Group Agent</p>
+          </div>
+
+          <div class="slide-review">
+            <h4>“Over 10 years of experience<br>
+              as a real estate agent”</h4>
+            <p class="slide-desc">
+              Amet libero morbi venenatis ut est. Iaculis leo ultricies nunc id ante adipiscing. Vel metus odio at
+              faucibus ac. Neque id placerat et id ut. Scelerisque eu mi ullamcorper sit urna. Est volutpat dignissim
+              elementum, nec.
+            </p>
+            <h5>Kristin Watson</h5>
+            <p>Imperial Property Group Agent</p>
+          </div>
+
+          <div class="slide-review">
+            <h4>“Over 10 years of experience<br>
+              as a real estate agent”</h4>
+            <p class="slide-desc">
+              Amet libero morbi venenatis ut est. Iaculis leo ultricies nunc id ante adipiscing. Vel metus odio at
+              faucibus ac. Neque id placerat et id ut. Scelerisque eu mi ullamcorper sit urna. Est volutpat dignissim
+              elementum, nec.
+            </p>
+            <h5>Kristin Watson</h5>
+            <p>Imperial Property Group Agent</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="insurance">
+      <h2 class="title">Страховой фонд</h2>
+      <div class="insurance-content">
+        <div class="insurance__content-less">
+          <div class="content-wrapper">
+            <h3>Инвестиционные<br> специалисты советуют хранить средства в:</h3>
+            <div class="icons-block">
+              <div class="icons-block__item">
+                <img src="img/insurance-icon-1.svg" alt="insurance-icon">
+                <h4>Акциях, котирующихся на бирже</h4>
+              </div>
+              <div class="icons-block__item">
+                <img src="img/insurance-icon-2.svg" alt="insurance-icon">
+                <h4>Депозитах в банках</h4>
+              </div>
+              <div class="icons-block__item">
+                <img src="img/insurance-icon-3.svg" alt="insurance-icon">
+                <h4>Государственных казначейских обязательств</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="insurance__content-high">
+          <div class="content-wrapper">
+            <h2><span>Что думаем мы</span><span>по этому поводу?</span></h2>
+            <p>
+              Если вникнуть и разобраться в этом вопросе, видим что банки рушатся, акции многих компаний теряют свою
+              ценность, и в конечном итоге обесцениваться.
+            </p>
+            <p>
+              Многие государственные чиновники, которые приходят к власти, присваивают себе ваши накопления, которые Вы
+              собираете, отчисляя налогами, тратя на это большую часть своей жизни и здоровья. И когда вы хотите хорошо
+              жить, имея на это полное право, оказываетесь в ситуации, что у Вас нечего нет.
+            </p>
+            <p>
+              Команда CashYou разработала уникальный сберегательный фонд, где не нужно накапливать 20-50 лет, при этом
+              отказывая себе во многих благах повседневной жизни. Вы сами сможете пользоваться своими накоплениями с
+              отличными дивидендами!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="extension-and-adjustment">
+      <div class="container">
+        <h2 class="title">Разрешения и регуляции</h2>
+        <div class="clickable-items">
+          <div class="clickable-item">
+            <h2>P2P</h2>
+            <p>Лицензия на одноранговое кредитование</p>
+            <div class="hover-border"></div>
+          </div>
+          <div class="clickable-item">
+            <h2>EMI</h2>
+            <p>Лицензия Европейского института электронных денег (EMI)</p>
+            <div class="hover-border"></div>
+          </div>
+          <div class="clickable-item">
+            <h2>CCP</h2>
+            <p>Авторизация поставщика потребительских кредитов (CCP) (LT / LV)</p>
+            <div class="hover-border"></div>
+          </div>
+          <div class="clickable-item">
+            <h2>ISO</h2>
+            <p>Соответствует ISO-27001</p>
+            <div class="hover-border"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <nav class="footer-nav">
+        <div class="footer-logo">
+          <img src="img/logo.svg" alt="footer-logo">
+        </div>
+        <div class="refs-wrapper">
+          <div class="company">
+            <h5>О компании</h5>
+            <input type="checkbox" class="toggleSubMenu" id="sub-m1">
+            <label for="sub-m1" class="toggleSubMenu"><i class="fa"></i></label>
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Мы в СМИ</a></li>
+              <li><a href="#">Лицензии и договора</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="investors">
+            <h5>Инвесторам</h5>
+            <input type="checkbox" class="toggleSubMenu" id="sub-m2">
+            <label for="sub-m2" class="toggleSubMenu"><i class="fa"></i></label>
+            <ul>
+              <li><a href="#">Виды инвестиций</a></li>
+              <li><a href="#">Страховой фонд</a></li>
+              <li><a href="#">Безопасность инвестиций</a></li>
+              <li><a href="#">Рынок ссуд</a></li>
+              <li><a href="#">Топ доходность с Нами</a></li>
+            </ul>
+          </div>
+          <div class="deptors">
+            <h5>Заемщикам</h5>
+            <input type="checkbox" class="toggleSubMenu" id="sub-m3">
+            <label for="sub-m3" class="toggleSubMenu"><i class="fa"></i></label>
+            <ul>
+              <li><a href="#">Взять кредит</a></li>
+              <li><a href="#">Типы кредитов</a></li>
+              <li><a href="#">Выгода без посредников</a></li>
+              <li><a href="#">Время получения кредита</a></li>
+            </ul>
+          </div>
+          <div class="information">
+            <h5>Полезная информация</h5>
+            <input type="checkbox" class="toggleSubMenu" id="sub-m4">
+            <label for="sub-m4" class="toggleSubMenu"><i class="fa"></i></label>
+            <ul>
+              <li><a href="#">Почему CASHYOU</a></li>
+              <li><a href="#">Благотворительность</a></li>
+              <li><a href="#">Досрочное погашение</a></li>
+              <li><a href="#">Наша статистика</a></li>
+              <li><a href="#">Кредиты без бюрократии</a></li>
+              <li><a href="#">Африка на карте Мира</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="footer-banner">
+        <div class="footer-banner__content">
+          <img src="img/footer-illustration.svg" class="foot-illustr" alt="illustration">
+          <img src="img/smartphone-illustation-mob.svg" class="foot-illustr-mob" alt="illustration-mobile">
+          <div class="descript">
+            <h4>Download Our App</h4>
+            <p>
+              Find everything you need for buying, selling<br>
+              & renting property in our new Finder App!
+            </p>
+          </div>
+          <div class="buttons">
+            <a href="#" class="app-store"><img src="img/app-store-icon.svg" alt="app-store"></a>
+            <a href="#" class="app-store"><img src="img/play-market-icon.svg" alt="play-market"></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright__left">Copyright © CASHYOU Theme. All rights reserved</p>
+        <p class="copyright__right">2021 CASHYOU, Inc. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</body>
+
+</html>
