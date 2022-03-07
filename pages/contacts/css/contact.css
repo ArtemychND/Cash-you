@@ -1,0 +1,147 @@
+@import url("../../../font/stylesheet.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.contacts {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Muller", sans-serif;
+  margin: 30px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.contacts-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__contact {
+  padding: 30px 30px 30px 30px;
+  background-color: #F5F4F8;
+  border-radius: 12px;
+}
+
+.content__contact h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
+}
+
+.content__contact ul {
+  margin: 35px 0;
+}
+
+.content__contact li {
+  display: flex;
+  max-width: 320px;
+  margin-top: 15px;
+}
+.content__contact li img {
+  width: 16px;
+  height: 15px;
+}
+.content__contact li p {
+  margin-left: 15px;
+  line-height: 24px;
+}
+
+.content__contact .social-block p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.content__contact .social-block__icons {
+  display: flex;
+  column-gap: 8px;
+  margin-top: 15px;
+}
+
+/* .content__contact .social-block__icons img {
+  width: 100%;
+  height: auto;
+} */
+
+.content__contact .social-block .icon-wrap {
+  background-color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content__contact .social-block .icon-wrap:hover {
+  background-color: #F9D72A;
+}
+
+.content__descript {
+  width: 100%;
+  max-width: 750px;
+}
+
+.content__descript h2 {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.content__descript h5 {
+  font-size: 16px;
+  margin-top: 24px;
+}
+
+.content__descript p {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 12px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .content__descript {
+    max-width: 470px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-content {
+    column-gap: 20px;
+  }
+  .content__descript {
+    max-width: 355px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts-content {
+    flex-wrap: wrap;
+    row-gap: 35px;
+  }
+  .content__contact {
+    width: 100%;
+  }
+  
+  .content__descript {
+    max-width: 100%;
+  }
+}

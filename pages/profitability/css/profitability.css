@@ -1,0 +1,293 @@
+@import url("../../../font/stylesheet.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muller", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 28px;
+}
+
+.profit {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 120px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.profit button {
+  font-size: 20px;
+  background-color: #F9D72A;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+.profit__banner{
+  width: 100%;
+  height: 510px;
+  background: url("../img/profit-banner.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.profit__title h4,
+.profit__title h1 span,
+.profit__content h2 span,
+.profit__content.b5 h2 span {
+  color: #676275;
+}
+
+.profit__title h4 {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+
+.profit .profit__title button {
+  padding: 22px;
+}
+
+.profit__content h2.title {
+  width: 100%;
+  max-width: 520px;
+  border-bottom: 3px solid #F9D72A;
+  margin: 70px auto;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(250px, auto) minmax(140px, auto) minmax(195px, auto) minmax(115px, auto);
+  gap: 20px 100px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "b1 pic"
+    "b2 pic"
+    "b3 pic"
+    "b4 b5";
+}
+
+.b1 {
+  grid-area: b1;
+}
+.b2 {
+  grid-area: b2;
+}
+.b3 {
+  grid-area: b3;
+}
+.b4 {
+  grid-area: b4;
+}
+.b5 {
+  grid-area: b5;
+}
+.b5 h2 small {
+  font-size: 30px;
+  color: #676275;
+}
+
+.content-block.pic {
+  grid-area: pic;
+  background: url("../img/content-img.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+.profit__content h4 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #F9D72A;
+}
+
+.profit__content .offer {
+  display: flex;
+  align-items: center;
+}
+
+.profit__content .offer button {
+  padding: 20px 40px;
+}
+.profit__content .offer span {
+  font-size: 30px;
+  margin-left: 25px;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 30px;
+  }
+  .profit__banner {
+    background: url("../img/profit-banner-1000.png") no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 420px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+
+  .content-wrapper {
+    grid-template-rows: repeat(6, auto);
+    gap: 20px 20px;
+    grid-auto-rows: minmax(max-content, auto);
+    grid-template-areas:
+      "b1 pic"
+      "b1 pic"
+      "b1 pic"
+      "b3 pic"
+      "b3 b2"
+      "b4 b5";
+  }
+
+  .content-block.pic {
+    background: url("../img/content-img-1024.png") no-repeat;
+  }
+  .profit__content .offer span {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profit {
+    font-size: 18px;
+    overflow: hidden;
+  }
+  .content-wrapper {
+    grid-template-areas:
+    "b1 pic"
+    "b1 pic"
+    "b1 pic"
+    "b3 b2"
+    "b3 b2"
+    "b4 b5";
+  }
+  .content-block.pic {
+    background: url("../img/content-img-768.png") no-repeat;
+  }
+  .profit__content h4 {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+  .profit button {
+    font-size: 16px;
+  }
+  .profit__banner {
+    background: url("../img/profit-banner-480.png") no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 350px;
+  }
+
+  .profit__content h2.title {
+    max-width: 350px;
+    margin: 35px auto;
+  }
+
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "b1"
+    "b4"
+    "pic"
+    "b3"
+    "b2"; 
+  }
+
+  .content-block.pic {
+    background: url("../img/content-img-480.png") no-repeat;
+    width: 100%;
+    height: 255px;
+    background-size: contain;
+  }
+
+  .b5 {
+    display: none;
+  }
+
+  .profit__content h4 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .profit__content .offer span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1,
+  h2 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  .profit__banner {
+    background: url("../img/profit-banner-375.png") no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 260px;
+  }
+
+  .content-block.pic {
+    background: url("../img/content-img-375.png") no-repeat;
+    width: 100%;
+    height: 255px;
+    background-size: contain;
+  }
+
+  .profit__content h4 {
+    font-size: 16px;
+  }
+
+  .profit__content .offer button {
+    padding: 20px 24px;
+  }
+
+  .profit__content .offer span {
+    font-size: 14px;
+  }
+}
+
